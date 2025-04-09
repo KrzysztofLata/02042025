@@ -5,13 +5,29 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="Window1" Height="450" Width="800">
+        Title="Dodaj ucznia" Height="450" Width="800">
     <Grid>
-        <TextBox x:Name="name" HorizontalAlignment="Left" Height="37" Margin="299,116,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="231"/>
-        <TextBox x:Name="surname"  HorizontalAlignment="Left" Height="67" Margin="368,179,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="141"/>
-        <TextBox x:Name="pesel" HorizontalAlignment="Left" Height="50" Margin="368,286,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="141"/>
+        <TextBox x:Name="name" HorizontalAlignment="Left" Height="37" Margin="126,40,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="230"/>
+        <TextBox x:Name="name2nd" Text="" HorizontalAlignment="Left" Height="37" Margin="432,40,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="230"/>
+        <TextBox x:Name="surname" HorizontalAlignment="Left" Height="37" Margin="126,105,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="536"/>
         <Button Click="Button_Click" Content="Dodaj" HorizontalAlignment="Left" Height="28" Margin="436,377,0,0" VerticalAlignment="Top" Width="222"/>
         <Button Content="Zamknij" Click="Button_Click_1" HorizontalAlignment="Left" Margin="126,377,0,0" VerticalAlignment="Top" Height="28" Width="231"/>
+        <Label Content="Imię*" HorizontalAlignment="Left" Margin="126,14,0,0" VerticalAlignment="Top" Width="153"/>
+        <Label Content="Drugie Imię" HorizontalAlignment="Left" Margin="432,14,0,0" VerticalAlignment="Top" Width="153"/>
+        <Label Content="Nazwisko*" HorizontalAlignment="Left" Margin="126,77,0,0" VerticalAlignment="Top" Width="153"/>
+        <TextBox x:Name="pesel" HorizontalAlignment="Left" Height="37" Margin="126,173,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="230"/>
+        <TextBox x:Name="date_of_birth"  HorizontalAlignment="Left" Height="37" Margin="432,173,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="230"/>
+        <Label Content="Pesel*" HorizontalAlignment="Left" Margin="126,147,0,0" VerticalAlignment="Top" Width="153"/>
+        <Label Content="Data urodzenia*" HorizontalAlignment="Left" Margin="432,147,0,0" VerticalAlignment="Top" Width="153"/>
+        <TextBox x:Name="phone" HorizontalAlignment="Left" Height="37" Margin="126,243,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="230"/>
+        <TextBox x:Name="city"  HorizontalAlignment="Left" Height="37" Margin="432,243,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="230"/>
+        <Label Content="Numer telefonu" HorizontalAlignment="Left" Margin="126,217,0,0" VerticalAlignment="Top" Width="153"/>
+        <Label Content="Miejscowość*" HorizontalAlignment="Left" Margin="432,217,0,0" VerticalAlignment="Top" Width="153"/>
+        <TextBox x:Name="adres" HorizontalAlignment="Left" Height="37" Margin="126,313,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="382"/>
+        <Label Content="Adres*" HorizontalAlignment="Left" Margin="126,285,0,0" VerticalAlignment="Top" Width="153"/>
+        <TextBox x:Name="post" HorizontalAlignment="Left" Margin="526,316,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="138" Height="32" RenderTransformOrigin="0.5,0.5">
+        </TextBox>
+        <Label Content="Kod Pocztowy*" HorizontalAlignment="Left" Margin="526,290,0,0" VerticalAlignment="Top" Width="153"/>
 
     </Grid>
 </Window>

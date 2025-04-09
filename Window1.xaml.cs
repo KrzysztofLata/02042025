@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Permissions;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -22,6 +23,12 @@ namespace WpfApp1
         public string xpes;
         public string xname;
         public string xsurname;
+        public string xname2nd;
+        public string xadres;
+        public string xdate;
+        public string xphone;
+        public string xcity ;
+        public string xcode ;
         public Window1()
         {
             InitializeComponent();
@@ -29,15 +36,28 @@ namespace WpfApp1
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            xpes = pesel.Text;
-            xname = name.Text;
-            xsurname = surname.Text;
-            Hide();
+            if (pesel.Text != null && name.Text != null && surname.Text != null && adres.Text != null && date_of_birth != null && post.Text != null && city.Text != null)
+            {
+                xpes = pesel.Text;
+                xname = name.Text;
+                xsurname = surname.Text;
+                xname2nd = name2nd.Text;
+                xadres = adres.Text;
+                xdate = date_of_birth.Text;
+                xphone = phone.Text;
+                xcode = post.Text;
+                xcity = city.Text;
+                Hide();
+            }
+            else
+            {
+                
+            }
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            MessageBoxResult res = MessageBox.Show("Czy chcesz zamknąć?",, MessageBoxButton.YesNo);
+            MessageBoxResult res = MessageBox.Show("Czy chcesz zamknąć?","Zamknąć okno", MessageBoxButton.YesNo);
             if (res==MessageBoxResult.Yes)
             {
                 Hide();
