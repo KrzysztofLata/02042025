@@ -16,7 +16,7 @@
         <Label Content="Drugie Imię" HorizontalAlignment="Left" Margin="432,14,0,0" VerticalAlignment="Top" Width="153"/>
         <Label Content="Nazwisko*" HorizontalAlignment="Left" Margin="126,77,0,0" VerticalAlignment="Top" Width="153"/>
         <TextBox x:Name="pesel" HorizontalAlignment="Left" Height="37" Margin="126,173,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="230"/>
-        <TextBox x:Name="date_of_birth"  HorizontalAlignment="Left" Height="37" Margin="432,173,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="230"/>
+
         <Label Content="Pesel*" HorizontalAlignment="Left" Margin="126,147,0,0" VerticalAlignment="Top" Width="153"/>
         <Label Content="Data urodzenia*" HorizontalAlignment="Left" Margin="432,147,0,0" VerticalAlignment="Top" Width="153"/>
         <TextBox x:Name="phone" HorizontalAlignment="Left" Height="37" Margin="126,243,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="230"/>
@@ -28,6 +28,7 @@
         <TextBox x:Name="post" HorizontalAlignment="Left" Margin="526,316,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="138" Height="32" RenderTransformOrigin="0.5,0.5">
         </TextBox>
         <Label Content="Kod Pocztowy*" HorizontalAlignment="Left" Margin="526,290,0,0" VerticalAlignment="Top" Width="153"/>
+        <DatePicker HorizontalAlignment="Left" Margin="436,178,0,0" x:Name="date_of_birth" VerticalAlignment="Top" Height="32" Width="228"/>
 
     </Grid>
 </Window>

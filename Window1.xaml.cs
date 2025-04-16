@@ -36,7 +36,7 @@ namespace WpfApp1
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            if (pesel.Text != null && name.Text != null && surname.Text != null && adres.Text != null && date_of_birth != null && post.Text != null && city.Text != null)
+            if (pesel.Text != "" && name.Text != "" && surname.Text != "" && adres.Text != "" && date_of_birth.Text != "" && post.Text != "" && city.Text != "")
             {
                 xpes = pesel.Text;
                 xname = name.Text;

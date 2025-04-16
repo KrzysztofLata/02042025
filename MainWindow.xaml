@@ -7,9 +7,20 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="900">
     <Grid>
-        <ListView x:Name="listView" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="0,0,0,64">
-            <ListView.View>
-                <GridView>
+        <ListView x:Name="listView" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="0,0,0,64" SelectionMode="Extended">
+            <ListView.Resources>
+                    <Style TargetType="ListViewItem">
+                        <Setter Property="HorizontalContentAlignment" Value="Left" />
+                        <Setter Property="Padding" Value="5,0,0,0"/>
+                        <Setter Property="Margin" Value="0,0,0,0"/>
+                    </Style>
+                    <Style TargetType="GridViewColumnHeader">
+                        <Setter Property="HorizontalContentAlignment" Value="Left" />
+                        <Setter Property="Padding" Value="5,0,0,0"/>
+                    </Style>
+                </ListView.Resources>
+                <ListView.View>
+                <GridView AllowsColumnReorder="False">
                     <GridViewColumn Header="ID" Width="25" DisplayMemberBinding="{Binding id}"/>
                     <GridViewColumn Header="Imię" Width="100" DisplayMemberBinding="{Binding name}"/>
                     <GridViewColumn Header="Drugie imię" Width="100" DisplayMemberBinding="{Binding name2nd}"/>
